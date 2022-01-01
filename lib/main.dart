@@ -13,20 +13,20 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       title: 'learning',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.green,),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter'),
           leading: const Icon(Icons.menu),
           actions: const [
             Icon(Icons.notification_add_outlined),
-            SizedBox(
-              width: 20,
-            )
+            SizedBox(width: 20),
           ],
         ),
         body: Center(
-          child: Image.network(linkofcdn),
+          child: Image.asset('assets/images/1.png'),
         ),
       ),
     );
